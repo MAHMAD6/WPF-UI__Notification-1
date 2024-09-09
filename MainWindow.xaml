@@ -1,0 +1,63 @@
+﻿<Window
+    x:Class="NotificationMessage.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:NotificationMessage"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="450"
+    Height="450"
+    Background="#E0DBD8"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <LinearGradientBrush x:Key="RedGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#602D30" />
+            <GradientStop Offset="0.4" Color="#20232E" />
+        </LinearGradientBrush>
+
+
+        <LinearGradientBrush x:Key="GreenGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#1D4F28" />
+            <GradientStop Offset="0.4" Color="#20232E" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="YellowGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Offset="0" Color="#5D4E1E" />
+            <GradientStop Offset="0.4" Color="#20232E" />
+        </LinearGradientBrush>
+
+    </Window.Resources>
+
+    <StackPanel 
+                >
+
+        <Button
+            Width="200"
+            Height="50"
+            Margin="30 60 30 30"
+            Background="#292F36"
+            Click="Button_Click"
+            Content="Show Error"
+            Foreground="White" />
+
+        <Button
+            Width="200"
+            Height="50"
+            Margin="30"
+            Background="#292F36"
+            Click="Button_Click_1"
+            Content="Show Success"
+            Foreground="White" />
+        <Button
+        Width="200"
+        Height="50"
+        Margin="30"
+        Background="#292F36"
+        Click="Button_Click_2"
+        Content="Show Notification"
+        Foreground="White" />
+
+    </StackPanel>
+</Window>
